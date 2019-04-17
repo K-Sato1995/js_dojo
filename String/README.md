@@ -1,5 +1,11 @@
 # String functions
 
+Assume the code above was declared in the top level of each example below.
+
+```JS
+var string = "string"
+```
+
 ## split()
 
 Splits a string into an array of substrings.
