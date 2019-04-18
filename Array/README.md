@@ -1,6 +1,6 @@
 # Array functions
 
-Assume the code above was declared in the top level of each example below.
+Assume the code below was declared at the top level of in the following examples.
 
 ```JS
 var arr = [1, 2, 3, 4, 5];
@@ -92,7 +92,8 @@ console.log(arr); //=>  [1, 2, 3, 4, 5]
 Selects a part of an array, and returns the new array.
 
 ```JS
-
+let a4 = arr.slice(0, 3);
+console.log(a4); //=>  [1, 2, 3]
 ```
 
 ## sort()
