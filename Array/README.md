@@ -139,6 +139,39 @@ let array = [4, 2, 3, 4, 5, 6, 7];
 console.log(array.sort()); //=> [2, 3, 4, 4, 5, 6, 7]
 ```
 
+## reverse()
+
+The method arr.reverse reverses the order of elements in arr.
+
+```JS
+console.log(arr.reverse()) //=> [5, 4, 3, 2, 1];
+```
+
+## reduce()
+
+The `reduce()` method reduces the array to a single value.
+
+The `reduce()` method executes a provided function for each value of the array (from left-to-right).
+
+Here is the basic syntax.
+
+```JS
+let value = arr.reduce(function(previousValue, item, index, array) {
+  // ...
+}, initial);
+```
+
+- `item` – is the current array item.
+- `index` – is its position.
+- `array` – is the array.
+- `previousValue` – is the result of the previous function call, initial for the first call.
+
+```JS
+let result = arr.reduce((sum, current) => sum + current, 0);
+
+console.log(result); //=> 15
+```
+
 # references
 
 - [w3schools.com](https://www.w3schools.com/jsref/jsref_obj_array.asp)
