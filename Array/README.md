@@ -6,60 +6,7 @@ Assume the code below was declared at the top level of in the following examples
 var arr = [1, 2, 3, 4, 5];
 ```
 
-## concat()
-
-Joins two or more arrays, and returns a copy of the joined arrays.
-
-```JS
-let a1 = arr.concat([6, 7]);
-console.log(a1); //=> [1, 2, 3, 4, 5, 6, 7]
-```
-
-## filter()
-
-Creates a new array with every element in an array that pass a test.
-
-```JS
-let a2 = arr.filter(num => num > 3);
-console.log(a2); //=> [4, 5]
-```
-
-## find()/findIndex()
-
-Returns the value of the first element in an array that pass a test.
-
-```JS
-console.log(arr.find(num => num > 2)); //=> 3
-console.log(arr.findIndex(num => num > 2)); //=> 2
-```
-
-## forEach()
-
-Calls a function for each array element.
-
-```JS
-function repeat(ele) {
-  console.log(ele);
-}
-arr.forEach(repeat); //=> 1 2 3 4 5
-```
-
-## includes()
-
-Check if an array contains the specified element.
-
-```JS
-console.log(arr.includes(2)); //=> true
-```
-
-## map()
-
-Creates a new array with the result of calling a function for each array element.
-
-```JS
-a3 = arr.map(ele => ele - 1);
-console.log(a3); //=> [0, 1, 2, 3, 4]
-```
+# Add or Remove items
 
 ## pop()/push()
 
@@ -96,15 +43,6 @@ let a4 = arr.slice(0, 3);
 console.log(a4); //=>  [1, 2, 3]
 ```
 
-## sort()
-
-Sorts the elements of an array.
-
-```JS
-let array = [4, 2, 3, 4, 5, 6, 7];
-console.log(array.sort()); //=> [2, 3, 4, 4, 5, 6, 7]
-```
-
 ## splice()
 
 Adds/Removes elements from an array.
@@ -122,6 +60,86 @@ console.log(months);
 // expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
 ```
 
+## concat()
+
+Joins two or more arrays, and returns a copy of the joined arrays.
+
+```JS
+let a1 = arr.concat([6, 7]);
+console.log(a1); //=> [1, 2, 3, 4, 5, 6, 7]
+```
+
+# Iterate items
+
+## forEach()
+
+Calls a function for each array element.
+
+```JS
+function repeat(ele) {
+  console.log(ele);
+}
+arr.forEach(repeat); //=> 1 2 3 4 5
+```
+
+# Search in array
+
+## indexOf()
+
+Looks for item starting from index from, and returns the index where it was found, otherwise -1.
+
+```JS
+console.log(arr.indexOf(0)) //=> 1
+console.log(arr.indexOf(10)) //=> -1
+```
+
+## find()/findIndex()
+
+Returns the value of the first element in an array that pass a test.
+
+```JS
+console.log(arr.find(num => num > 2)); //=> 3
+console.log(arr.findIndex(num => num > 2)); //=> 2
+```
+
+## includes()
+
+Check if an array contains the specified element.
+
+```JS
+console.log(arr.includes(2)); //=> true
+```
+
+## filter()
+
+Creates a new array with every element in an array that pass a test.
+
+```JS
+let a2 = arr.filter(num => num > 3);
+console.log(a2); //=> [4, 5]
+```
+
+# Transform array
+
+## map()
+
+Creates a new array with the result of calling a function for each array element.
+
+```JS
+a3 = arr.map(ele => ele - 1);
+console.log(a3); //=> [0, 1, 2, 3, 4]
+```
+
+## sort()
+
+Sorts the elements of an array.
+
+```JS
+let array = [4, 2, 3, 4, 5, 6, 7];
+console.log(array.sort()); //=> [2, 3, 4, 4, 5, 6, 7]
+```
+
 # references
 
-[w3schools.com](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [w3schools.com](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [javascript.info](https://javascript.info/array-methods#searching-in-array)
